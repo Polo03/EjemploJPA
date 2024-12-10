@@ -15,6 +15,14 @@ public class Departamento {
     @Column(name = "Nombre", nullable = false, length = 50)
     private String nombre;
 
+    public Departamento() {
+        super();
+    }
+
+    public Departamento(String nombre) {
+        this.nombre = nombre;
+    }
+
     public Integer getId() {
         return id;
     }
