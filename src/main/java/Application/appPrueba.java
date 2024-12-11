@@ -10,7 +10,6 @@ public class appPrueba {
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("EjemploJPA");
         EntityManager em = emf.createEntityManager();
         Departamento departamento = new Departamento("Ejemplo");
-        System.out.println("HOLA");
         try {
             em.getTransaction().begin();
             em.persist(departamento);
